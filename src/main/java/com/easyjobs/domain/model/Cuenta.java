@@ -21,7 +21,6 @@ public class Cuenta {
     @NotNull
     private String password;
 
-    @NotNull
     @Column(unique = true)
     private String username;
 
