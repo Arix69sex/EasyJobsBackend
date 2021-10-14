@@ -1,7 +1,5 @@
 package com.easyjobs.unit;
 
-import com.easyjobs.domain.model.Cuenta;
-import com.easyjobs.domain.model.Tecnico;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

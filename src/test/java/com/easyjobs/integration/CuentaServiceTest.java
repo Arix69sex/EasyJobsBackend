@@ -1,8 +1,5 @@
 package com.easyjobs.integration;
 
-import com.easyjobs.domain.model.Cuenta;
-import com.easyjobs.domain.repository.CuentaRepository;
-import com.easyjobs.domain.service.CuentaService;
 import com.easyjobs.exception.ResourceNotFoundException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
