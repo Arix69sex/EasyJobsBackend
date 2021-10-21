@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         maven "Mvn3.8.3"
+        jdk = tool name: 'openJDK14'
     }
 
     stages {
