@@ -25,6 +25,9 @@ public class Service {
     private String description;
 
     @NotNull
+    private Float score;
+
+    @NotNull
     private Float price;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
