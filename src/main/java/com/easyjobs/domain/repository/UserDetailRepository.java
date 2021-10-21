@@ -5,6 +5,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.domain.Pageable;
 
+import java.util.Optional;
+
 public interface UserDetailRepository extends JpaRepository<UserDetail,Long> {
-    Page<UserDetail> findAllByUserId(Long userId, Pageable pageable);
+    Optional<UserDetail> findByUserId(Long userId);
 }

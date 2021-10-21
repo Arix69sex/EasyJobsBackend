@@ -47,13 +47,8 @@ public class UserDetailController {
 
     @Operation(summary = "Get All Details by UserId", description = "Get All Details by UserId", tags = {"details"})
     @GetMapping("/users/{userId}/details")
-    public Page<UserDetailResource> getDetailsByUserId(@PathVariable Long userId, Pageable pageable){
-        Page<UserDetail> detailPage = userDetailService.getDetailsByUserId(userId, pageable);
-        List<UserDetailResource> resources = detailPage.getContent()
-                .stream()
-                .map(this::convertToResource)
-                .collect(Collectors.toList());
-        return new PageImpl<>(resources, pageable, resources.size());
+    public UserDetailResource getDetailsByUserId(@PathVariable Long userId){
+        return convertToResource(userDetailService.getDetailsByUserId(userId));
     }
 
 

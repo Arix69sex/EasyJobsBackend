@@ -32,8 +32,9 @@ public class UserDetailServiceImpl implements UserDetailService {
     }
 
     @Override
-    public Page<UserDetail> getDetailsByUserId(Long userId, Pageable pageable) {
-        return userDetailRepository.findAllByUserId(userId, pageable);
+    public UserDetail getDetailsByUserId(Long userId) {
+        return userDetailRepository.findByUserId(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("UserDetail", "UserId", userId));
     }
 
     @Override

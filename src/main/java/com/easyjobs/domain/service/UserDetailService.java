@@ -13,7 +13,7 @@ public interface UserDetailService {
 
     UserDetail getDetailById(Long detailId);
 
-    Page<UserDetail> getDetailsByUserId(Long userId, Pageable pageable);
+    UserDetail getDetailsByUserId(Long userId);
 
     UserDetail createDetail (Long userId, UserDetail userDetail);
 
