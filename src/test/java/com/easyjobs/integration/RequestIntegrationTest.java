@@ -22,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DataJpaTest
 public class RequestIntegrationTest {
 
+    /*
     @Autowired
     private UserRepository userRepository;
 
@@ -65,4 +66,6 @@ public class RequestIntegrationTest {
         assertThat(requestRepository.findAllByUserId(foundUser.getId(), Pageable.unpaged()).get()).contains(foundRequest);
         assertThat(requestRepository.findAllByServiceId(foundService.getId(), Pageable.unpaged()).get()).contains(foundRequest);
     }
+
+     */
 }
